@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2299.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;沙尘暴中找朋友&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>#playground {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 600px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 400px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-image: url('sandstorm.jpg'); /* 沙尘暴背景图 */</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-size: cover;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.friend {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 50px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 50px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-color: #ff0000; /* 朋友图标颜色 */</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 50%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div id="playground"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="friend" id="friend1"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="friend" id="friend2"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="friend" id="friend3"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>// 获取朋友图标的DOM元素</p>
+<p class="p1"><span class="Apple-converted-space">    </span>var friend1 = document.getElementById('friend1');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>var friend2 = document.getElementById('friend2');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>var friend3 = document.getElementById('friend3');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// 设置朋友图标的随机初始位置</p>
+<p class="p1"><span class="Apple-converted-space">    </span>friend1.style.left = Math.random() * 550 + 'px';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>friend1.style.top = Math.random() * 350 + 'px';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>friend2.style.left = Math.random() * 550 + 'px';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>friend2.style.top = Math.random() * 350 + 'px';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>friend3.style.left = Math.random() * 550 + 'px';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>friend3.style.top = Math.random() * 350 + 'px';</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// 添加朋友图标的点击事件监听器</p>
+<p class="p1"><span class="Apple-converted-space">    </span>friend1.addEventListener('click', function() {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>alert('找到朋友1啦！'); // 找到朋友1的提示</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>friend2.addEventListener('click', function() {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>alert('找到朋友2啦！'); // 找到朋友2的提示</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>friend3.addEventListener('click', function() {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>alert('找到朋友3啦！'); // 找到朋友3的提示</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
